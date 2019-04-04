@@ -1,0 +1,95 @@
+/*! full-screen-slide.css v1.0.0 | tianjia | https://github.com/tianjiax/Personal-plug-in-library/tree/master/Full-screen-slide */
+body{
+	overflow-x: hidden;
+}
+.w-auto-Center{
+	margin:0 auto
+}
+.slide-box{
+	width: 1200px;
+	height: 600px;
+	position: relative;
+	margin: 0 auto
+}
+.slide-box .slide-out{
+	width:500%;
+}
+.slide-box .slide-out .slide-li{
+	float: left;
+	overflow:hidden; 
+	text-align: center;
+	transform:scale(0.9);
+	-moz-transform:scale(0.9);
+	-webkit-transform:scale(0.9);
+	-o-transform:scale(0.9);
+	transition: all  0.5s;
+	-moz-transition: all  0.5s; /* Firefox 4 */
+	-webkit-transition: all  0.5s; /* Safari 和 Chrome */
+	-o-transition: all  0.5s; /* Opera */
+}
+.slide-box .slide-out.isblock .slide-li,
+.slide-box .slide-out.full-screen .slide-li{
+	transform:scale(1);
+	-moz-transform:scale(1);
+	-webkit-transform:scale(1);
+	-o-transform:scale(1);
+}
+.slide-box .slide-out .slide-li.slide-li-act{
+	transform:scale(1);
+	-moz-transform:scale(1);
+	-webkit-transform:scale(1);
+	-o-transform:scale(1);
+}
+.slide-box .slide-out .slide-li .slide-li-content{
+	width: 100%;
+	margin: 0;
+}
+.slide-page .slide-button-prev,
+.slide-page .slide-button-next{
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	cursor: pointer;
+}
+.slide-page .slide-button-prev{
+	left: 0;
+}
+.slide-page .slide-button-next{
+	right: 0;	
+}
+.slide-page .slide-button-prev i,
+.slide-page .slide-button-next i{
+	display: block;
+	width: 40px;
+	height: 60px;
+	opacity: 0.7;
+}
+.slide-page .slide-button-prev i{
+	background: url(../images/icon/slide-button-prev.png);
+}
+.slide-page .slide-button-next i{
+	background: url(../images/icon/slide-button-next.png);
+}
+.slide-page .slide-button-prev:hover i,
+.slide-page .slide-button-next:hover i{
+	opacity: 1;
+}
+.slide-pagination{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+.slide-pagination .slide-pagination-bullet{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 0 5px;
+	cursor: pointer;
+	opacity: 0.4;
+}
+.slide-pagination .slide-pagination-bullet.slide-pagination-bullet-active{
+	opacity: 1;
+}

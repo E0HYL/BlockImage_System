@@ -1,0 +1,72 @@
+* {
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container input {
+    width: 120px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: 0;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#filelist {
+    width: 800px;
+    border: solid 1px #eee;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+#filelist td {
+    border-bottom: solid 1px #eee;
+    height: 30px;
+    font-size: 12px;
+    /*line-height:30px ;*/
+    padding: 0 3px;
+}
+
+.filename {
+    width: 200px;
+    text-align: center;
+}
+
+.filestatus {
+    width: 100px;
+    text-align: center;
+}
+
+.fileprogress {
+    text-align: center;
+}
+
+.domprogress {
+    width: 320px;
+}
+
+.domsize {
+    display: block;
+}
+
+#tdmsg {
+    text-align: center;
+}
+
+#fileselect {
+    display: none;
+}
+
+span.domtime {
+    display:block;
+}

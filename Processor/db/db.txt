@@ -1,0 +1,3 @@
+create database pichash;
+use pichash;
+create table inf(orihash varchar(20),waterhash varchar(20),phash varchar(20));

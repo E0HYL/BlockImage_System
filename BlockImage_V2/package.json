@@ -1,0 +1,16 @@
+{
+  "name": "blockimage",
+  "version": "1.0.0",
+  "description": "E0 DAPP",
+  "main": "app.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "E0",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0",
+    "lite-server": "^2.3.0"
+  }
+}

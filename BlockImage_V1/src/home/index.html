@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link href="images/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />
+    <link href="images/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" />
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="BlockImage. Picture for everyone and all your works mean a lot." />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/file-upload-with-preview.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/component.css" rel="stylesheet" type="text/css" />
+    <link href="css/input.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/plug-in.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+</head>
+
+<body id="page-top" class="cbp-spmenu-push">
+    <!-- banner1 -->
+    <div class="banner1">
+        <div class="container">
+            <div class="header">
+                <div class="header-left">
+                    <form>
+                        <input type="text" value="20,000 images" id="indexsearch" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '20,000 images';}" required>
+                        <input type="submit" value="" class="imgsearonclick">
+                        <div class="clearfix"> </div>
+                    </form>
+                </div>
+                <div class="header-left1">
+                    <h1>
+                        <a href="#"><br/>BlockImage</a>
+                    </h1>
+                </div>
+                <!-- #push_sidebar -->
+                <div class="top-nav">
+                    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li id="li1"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>主页</a></li>
+                            <li id="li2"><a onclick="uploadonclick()"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>上传</a></li>
+                            <li id="li3" class="active"><a onclick="galonclick()"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>图库</a></li>
+                            <li id="li4"><a onclick="seronclick()"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>更多</a></li>
+                        </ul>
+                    </nav>
+                    <div class="main buttonset">
+                        <button id="showRightPush"><img src="images/menu.png" width="40" height="40" alt=""/></button> &nbsp; &nbsp;
+                        <button class="changesingle" id="showRightPush"><a onclick="contactonclick()"><img src="images/people.png" width="40" height="40" alt=""/></a></button>
+                    </div>
+                </div>
+                <!-- /#push_sidebar -->
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //banner1 -->
+    
+    <!-- imgsearch -->
+    <div class="imgsearch nondisplay">
+        <div class="tab-pane fade in active">
+            <div class="single-left2">
+                <div class="single-left1" style="padding-bottom: 2em;">
+                    <h5>查询结果</h5>
+                </div>
+                <div class="col-md-4 single-left1-grid">
+                    <img src="images/clients.png" alt=" " class="img-responsive" />&nbsp;&nbsp;
+                </div>
+                <div class="col-md-8 single-left1-grid">
+                    <div class="list-group list-group-alternate">
+                        <div class="list-group-item"><span class="owner badge badge-primary">Rose</span>owner </div>
+                        <div class="list-group-item"><span class="badge badge-primary"><span class="email">zoe@qq.com</span></span>email </div>
+                        <div class="list-group-item"><span class="ohash badge badge-primary">0x12345568908479327489372948389646586498</span>oHash </div>
+                        <div class="list-group-item"><span class="ehash badge badge-primary">0x12345568908479327489372948389646586498</span>eHash </div>
+                        <div class="list-group-item"><span class="timestamp badge badge-primary">5646788999</span>Timestamp </div>
+                        <div class="list-group-item"><span class="imgindex badge badge-primary">77</span>Image Index </div>
+                        <div class="list-group-item"><span class="badge badge-primary"><span class="fee">5</span></span>fee </div>
+                    </div>
+                    <div class="list-group list-group-alternate">
+                        <div class="list-group-item"><span class="badge badge-primary">
+                            <a data-role="button" class="showuser">点击查看图片使用者</a>
+                        </span>使用者</div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //imhsearch -->
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <section id="portfolio">
+            <div class="container">
+                <div class="rowcontainer">
+                <div class="row">
+                    <!-- images load here-->
+                </div>
+            </div>
+            <!-- container -->
+        </section>
+        <nav align="center">
+            <ul class="pagination">
+                <li id="frontpage"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#" class="currentpage">1 <span class="sr-only">(current)</span></a></li>
+                <li id="backpage"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="gal" style="display:none;">
+        <div class="row-0-gutter">
+            <!-- start portfolio item -->
+            <div class="col-md-6 col-0-gutter">
+                <div class="ot-portfolio-item">
+                    <figure class="effect-bubba">
+                        <img src="images/demo/portfolio-1.jpg" alt="img02" class="img-responsive" />
+                        <figcaption>
+                            <h2>作者:&nbsp<span class="author">Dean & Letter</span></h2>
+                            <p>原图Hash:&nbsp<span class="orihash">Branding, Design
+                                </span><br>密图Hash:&nbsp<span class="ehash">hhh</span></p>
+                            <a href="#" data-toggle="modal" data-target="#myModal">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- end portfolio item -->
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title author" id="Modal-label-1">Dean & Letter</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/demo/portfolio-1.jpg" alt="img01" class="img-responsive" />
+                        <div class="modal-works"><span class="imgindex">99</span><span class="imgprice" id="test">1wei</span>
+                            <span class="imgemail">1056669812@qq.com</span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <input class="price" id="test" type="text" value="出价  (购买图片版权才需要出价)" onfocus="this.value = '';">
+                        <button type="button" class="buttbuy btn btn-default" data-dismiss="modal" name="test">Buy</button>
+                        <button type="button" class="buttuse btn btn-default" data-dismiss="modal" name="test">Use</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//Gallery-->
+
+    <!-- services -->
+    <div class="services  nondisplay">
+        <div class="certify">
+            <h3>身份验证申请</h3>
+            <div class="application" style="text-align: center;">
+                <br>
+                <input class="account" id="account1" type="text" value='请输入对方的账户地址，获取对方公钥' required onFocus="if (this.value == '请输入对方的账户地址，获取对方公钥') {this.value = '';}" onBlur="if (this.value == '') {this.value = '请输入对方的账户地址，获取对方公钥';}">
+                <button type="button" class="getkeybtn btn btn-default" data-dismiss="modal"></button>
+                <br>
+                <textarea class="putcode" id='enccode' name="textarea" required onFocus="if (this.value == '输入加密后的验证码') {this.value = '';}" onBlur="if (this.value == '') {this.value = '输入加密后的验证码';}">输入加密后的验证码</textarea>
+                <br><br>
+                <button type="button" class="codesubmit btn btn-default" data-dismiss="modal" style="border: 1px solid #808080">提交加密后的验证码</button>
+            </div>
+            <br><br>
+            <h3>获取验证信息</h3>
+            <div class="getenccode" style="text-align: center;">
+                <br>
+                <input class="account" id="account2" type="text" value='请输入对方的账户地址，获取加密后的验证码' required onFocus="if (this.value == '请输入对方的账户地址，获取加密后的验证码') {this.value = '';}" onBlur="if (this.value == '') {this.value = '请输入对方的账户地址，获取加密后的验证码';}">
+                <button type="button" class="getcodebtn btn btn-default" data-dismiss="modal"></button>
+                <br>
+                <textarea class="getcode" name="textarea" required onFocus="if (this.value == '收到的加密验证码') {this.value = '';}" onBlur="if (this.value == '') {this.value = '收到的加密验证码';}">收到的加密验证码</textarea>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h3 style="font-size: 2.5em;">区块展示</h3>
+            <div class="blockshow">
+            </div>
+        </div>
+    </div>
+    <div class="serv" style="display: none;">
+        <div class="bs-docs-example">
+            <table class="table table-striped" style="margin-bottom: 50px;">
+                <thead>
+                    <tr>
+                        <th width=10% class="bindex">#Block 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width=1px></td>
+                        <td width=30%>GAS USED</td>
+                        <td class="vgused">33868</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>GAS LIMITED</td>
+                        <td class="vglimit">6721975</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>BLOCK HASH</td>
+                        <td class="vhblock">OX8Cd40ac...</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>PARENT HASH</td>
+                        <td class="vhparent">OX8Cd40ac...</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>TIME STAP</td>
+                        <td class="vtstap">hhh</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- //services -->
+
+    <!-- contact -->
+    <div class="contact nondisplay">
+        <div class="container">
+            <div class="col-md-8 contact-left">
+                <div class="mail">
+                    <h3>认证信息</h3>
+                    <form>
+                        <input type="text1" id="cnickname" value="用户名" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '用户名';}" required>
+                        <input type="phone" id="cphone" value="电话" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '电话';}" required>
+                    </form>
+                    <form id="new">
+                        <input type="text" id="cusername" value="姓名" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '姓名';}" required>
+                        <input type="id" id="cid" value="身份证号" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '身份证号';}" required>
+                    </form>
+                    <form id="new">
+                        <input type="sex" id="cusersex" value="性别" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '性别';}" required>
+
+                        <input type="age" id="cage" value="年龄" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '年龄';}" required>
+                        <input type="text" id="cemail" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '邮箱';}" required>
+                        <textarea name="textarea" id="pubkey" required onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '公钥';}">公钥</textarea>
+                        <textarea name="textarea" id="caddress" style="height: 120px;" required onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '现居地址';}">现居地址</textarea>
+                        <button class="btn btn-default contactsubmit">确认</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 contact-right">
+                <h3>Authenticate here.</h3>
+                <p>Please fill in the real information.<br/>
+                   Only the SM3 hash of the Identity Information will be stored on the blockchain after checking.<br/>
+                   No third party will store your private information.<br/>
+                   In BlockImage, you needn't worry about copyright issues and all your works mean a lot.
+                </p>
+                <div class="contact-right1">
+                    <img src="images/clients.png" alt=" " class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //contact -->
+
+    <!-- single -->
+    <div class="single nondisplay">
+        <div class="container">
+            <div class="col-md-4 single-right">
+                <div class="blog-right1">
+                    <div class="search1">
+                        <h3>个人信息</h3>
+                        <p><span>用户名：&nbsp;</span><span class="username">James</span></p>
+                        <p><span>邮箱：&nbsp;</span><span class="useremail">107@qq.com</p>
+                        <p><span>收益：&nbsp;</span><span class="earnings">James</span></p>
+                        <p><span>infoHash：&nbsp;</span><span class="infohash">James</span></p>
+                        <button class="btn btn-default withdrawal">提款</button>
+                        <br/><br/><br/>
+                    </div>
+                    <div class="categories categories-mid">
+                    </div>
+                    <div class="related-posts1 workfont">
+                        <h3>个人作品</h3>
+                    </div>
+                    <div class="related-posts2 workfont">
+                        <h3>已购作品</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 single-left">
+                <div class="comments">
+                    <ul class="singleinf">
+                        <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="#" class="username">James Smith</a></li>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#" class="ndeal">0</a> Requests</li>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#" class="npay">0</a> Received</li>
+                        <li><span class="glyphicon glyphicon-tags" aria-hidden="true"></span><a href="#" class="nwork">0</a> Published</li>
+                        <li><span class="glyphicon glyphicon-tags" aria-hidden="true"></span><a href="#" class="nbuy">0</a> Bought</li>
+                    </ul>
+                </div>
+                <h3>All your works mean a lot! <br>Blockchain can earn your trust, so enjoy managing your images here.</h3>
+                <div id="myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+                        <div class="single-left1">
+                            <h5>购物车</h5>
+                            <div class="single-left1-grids">
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="bs-docs-example">
+                                <table class="paying table table-hover">
+                                    <thead class="nondisplay">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>图片ID</th>
+                                            <th>价格</th>
+                                            <th>状态</th>
+                                            <th>处理</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade in active" id="home2" aria-labelledby="home2-tab">
+                        <div class="single-left1">
+                            <h5>收到的请求</h5>
+                            <div class="single-left1-grids">
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="bs-docs-example">
+                                <table class="dealing table table-hover">
+                                    <thead class="nondisplay">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>图片ID</th>
+                                            <th>价格</th>
+                                            <th>状态</th>
+                                            <th>处理</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab"></div>
+                <div class="single-left1">
+                    <h5>上传状态</h5>
+                    <div class="single-left1-grids">
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="bs-docs-example">
+                        <div class="imgdeals">
+                        </div>
+                    </div>
+                </div>
+                <div class="worksinfo">
+                </div>
+                <div class="buysinfo">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--作品-->
+    <div class="userwork" style="display: none;">
+        <div class="related-post">
+            <div class="related-post-left">
+                <a href="#home3"><img alt=" " class="img-responsive workimg" /></a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!--//作品-->
+
+    <!-- 个人作品 -->
+    <div class="workinfo" style="display: none;">
+        <div class="tab-pane fade in active" id="home3">
+            <div class="single-left2">
+                <div class="single-left1">
+                    <h5>个人作品</h5>
+                </div>
+                <div class="col-md-4 single-left1-grid">
+                    <img src="images/clients.png" alt=" " class="img-responsive" />&nbsp;&nbsp;
+                </div>
+                <div class="col-md-8 single-left1-grid">
+                    <div class="list-group list-group-alternate">
+                        <div class="list-group-item"><span class="owner badge badge-primary">Rose</span>owner </div>
+                        <div class="list-group-item"><span class="ohash badge badge-primary">0x12345568908479327489372948389646586498</span>oHash </div>
+                        <div class="list-group-item"><span class="ehash badge badge-primary">0x12345568908479327489372948389646586498</span>eHash </div>
+                        <div class="list-group-item"><span class="timestamp badge badge-primary">5646788999</span>Timestamp </div>
+                        <div class="list-group-item"><span class="imgindex badge badge-primary">77</span>Image Index </div>
+                        <div class="list-group-item"><span class="badge badge-primary"><span class="fee">5</span>wei</span>fee </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //个人作品 -->
+
+    <!--//已购作品-->
+    <div class="buyinfo" style="display: none;">
+        <div class="tab-pane fade in active" id="home3">
+            <div class="single-left2">
+                <div class="single-left1">
+                    <h5>已购作品</h5>
+                </div>
+                <div class="col-md-4 single-left1-grid">
+                    <img src="images/17.jpg" alt=" " class="img-responsive" />&nbsp;&nbsp;
+                    <button class="getkey" name="buybut"></button>
+                </div>
+                <div class="col-md-8 single-left1-grid">
+                    <div class="list-group list-group-alternate">
+                        <div class="list-group-item"><span class="ohash badge badge-primary">0x12345568908479327489372948389646586498</span>oHash </div>
+                        <div class="list-group-item"><span class="ehash badge badge-primary">0x12345568908479327489372948389646586498</span>eHash </div>
+                        <div class="list-group-item"><span class="timestamp badge badge-primary">5646788999</span>Timestamp </div>
+                        <div class="list-group-item"><span class="imgindex badge badge-primary">77</span>Image Index </div>
+                        <div class="list-group-item"><span class="badge badge-primary"><span class="fee">5</span><span>wei</span></span>fee </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- 已购作品 -->
+
+    <!--购物车-->
+    <table class="waitpay table table-hover" style="display: none;">
+        <tbody>
+            <tr>
+                <td class="burindex">1</td>
+                <td class="imgindex">1</td>
+                <td><span class="imgprice">77</span><span>wei</span></td>
+                <td class="paystate" id="test">use</td>
+                <td class="undo" ><button class="label label-danger btn undobtn" id='nondisplay' type="button" name="undo">撤销</button></td>
+            </tr>
+            <tr>
+                <td class='workfont' colspan="4">卖家：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="seller"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <!--//购物车-->
+
+    <!--接收到的请求-->
+    <table class="waitdeal table table-hover" style="display: none;">
+        <tbody class="deal" , id="test">
+            <tr>
+                <td class="burindex">1</td>
+                <td class="imgindex">1</td>
+                <td><span class="imgprice">77</span><span>wei</span></td>
+                <td class="dealstate" id="test">use</td>
+                <td class="dealchoice" id="test"><button class="butt1 label label-danger btn" id="nondisplay" type="button" name="agree">同意</button>
+                    <button class="butt2 label label-danger btn" id="nondisplay" type="button" name="reject">拒绝</button></td>
+            </tr>
+            <tr>
+                <td class='workfont' colspan="4">买家: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="buyer"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <!--//接收到的请求-->
+
+    <!-- 上传状态 -->
+    <div class="imgdeal" style="display: none;">
+        <div class="list" id="test">
+            <p class='workfont'>#index: <span class="picindex">1</span></p>
+            <div class="list-group list-group-alternate">
+                <div class="list-group-item"><span class="ohash badge badge-primary">0x12345568908479327489372948389646586498</span>oHash </div>
+                <div class="list-group-item"><span class="workstate badge badge-primary" id="test"></span>state </div>
+                <div class="workchoice" id="test">
+                    <div class="list-group-item ehash" id="nondisplay"><span class="vehash badge badge-primary">77</span>ehash </div>
+                    <div class="list-group-item whash" id="nondisplay"><span class="vwhash badge badge-primary">5</span>whash </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //上传状态 -->
+
+    <!-- //single -->
+
+    <!--upload-->
+    <div class="upload nondisplay">
+        <div class="demo-upload-container">
+
+            <div class="custom-file-container" data-upload-id="myFirstImage">
+                <label>Please choose your picture<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image"></a></label>
+                <label class="custom-file-container__custom-file">
+                    <input type="file" id="imgselector" class="custom-file-container__custom-file__custom-file-input" accept="image/jpeg image/png">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="10485760"/>
+                    <span class="custom-file-container__custom-file__custom-file-control"></span>
+                </label>
+                <div class="custom-file-container__image-preview"></div>
+                <input class="usagefee" id="imagefee" type="text" value="usage-fee" onfocus="this.value = '';">
+            </div>
+        </div>
+        <div class="demo-info-container">
+            <div>
+                <a class="upload-info-button upload-info-button--first">Upload</a>
+            </div>
+        </div>
+    </div>
+    <!-- //upload-->
+
+    <!-- footer-->
+    <footer id="footer">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center"> -->
+                        <!-- <p>&copy; BlockImage. All Rights Reserved.</p> -->
+                    <!-- </div>
+                </div>
+            </div>
+        </div> -->
+    </footer>
+    <!-- //footer -->
+    <a href="#" id="toTop" style="display:inline;">
+        <span id="toTopHover" style="opacity:0;"></span>"To Top"
+    </a>
+
+    <!-- Bootstrap core JavaScript
+		================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+    <script src="js/classie.js"></script>
+    <script type="text/javascript" src="js/click.js"></script>
+    <!-- <script src="js/sm3.js"></script> -->
+    <script src="js/md5.js"></script>
+    <script src="js/spark-md5.js"></script>
+    <script src="js/file-upload-with-preview.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
