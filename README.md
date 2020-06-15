@@ -11,7 +11,7 @@ We won first prize in 2018 National College Student Information Security Contest
 4. [Processor](https://github.com/E0HYL/BlockImage_System/tree/master/Processor): Tornado based server. (encryption, sensitive hashing, digital watermark, IPFS upload...)
 5. [BImgAssist](https://github.com/E0HYL/BlockImage_System/tree/master/BImgAssist): Client helper.
 
-Notice: Server here is just a helper for user interaction (so we'd rather call it a processor), the core function is developed on blockchain and encrypted/watermarked images are stored in IPFS. 
+Notice: Server here is just a helper for user interaction (so we'd rather call it a processor). The core function is developed on blockchain and the encrypted/watermarked images are stored in IPFS, which are completely distributed. 
 
 ## DApp Overview
 
