@@ -1,6 +1,6 @@
 # BlockImage System
-Team Member: E0, [EP](https://github.com/LinkleYping)<br>
-A original picture sharing system based on blockchain & digital watermark.<br>
+Team Members: E0, [EP](https://github.com/LinkleYping)<br>
+An original picture sharing system based on blockchain & digital watermark.<br>
 We won first prize in 2018 National College Student Information Security Contest.
 
 ## Directory
@@ -17,6 +17,6 @@ Notice: Server here is just a helper for user interaction (so we'd rather call i
 
 ![](img/index.JPG)
 
-Buy or use a image: transfer or authorize the copyright.
+Buy or use an image: transfer or authorize the copyright.
 
 ![](img/buy.JPG)
